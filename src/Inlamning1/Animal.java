@@ -1,6 +1,6 @@
 package Inlamning1;
 
-public class Animal implements Food{
+public class Animal implements Food {
     protected int weight;
     protected String name;
 
@@ -9,7 +9,7 @@ public class Animal implements Food{
     }
 
     public void setName(String name) {
-        if (name!=null)this.name = name;
+        if (name != null) this.name = name;
         else throw new IllegalArgumentException("Name cannot be null");
     }
 
@@ -21,7 +21,8 @@ public class Animal implements Food{
         if (weight > 0) this.weight = weight;
         else throw new IllegalArgumentException("Weight must be larger that zero.");
     }
-    public Animal(String name,int weight){
+
+    public Animal(String name, int weight) {
         setName(name);
         setWeight(weight);
     }
@@ -30,4 +31,11 @@ public class Animal implements Food{
     public int amountOfFood() {
         return 0;
     }
+
+    @Override
+    public String foodType() {
+        return null;
+    }
+
+
 }

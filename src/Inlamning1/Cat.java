@@ -1,11 +1,17 @@
 package Inlamning1;
 
 public class Cat extends Animal {
-    public Cat (String name, int weight){
+    protected Cat(String name, int weight) {
         super(name, weight);
     }
-@Override
+
+    @Override
     public int amountOfFood() {
-        return weight / Kind.CAT.foodIndex;
+        return getWeight() / Kind.CAT.foodIndex;
+    }
+
+    @Override
+    public String foodType() {
+        return Kind.CAT.foodType;
     }
 }
