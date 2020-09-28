@@ -4,8 +4,8 @@ public class Cat extends Animal {
     public Cat (String name, int weight){
         super(name, weight);
     }
-
+@Override
     public int amountOfFood() {
-        return weight / 150;
+        return weight / Kind.CAT.foodIndex;
     }
 }
