@@ -8,11 +8,11 @@ public class Dog extends Animal {
 
     @Override
     public int amountOfFood() {
-        return getWeight() / Kind.DOG.foodIndex;
+        return getWeight() / KindOfFood.DOG.foodIndex;
     }
                                                         //Här använder jag enumet DOG.foodIndex
     @Override
     public String foodType() {
-        return Kind.DOG.foodType;
+        return KindOfFood.DOG.foodType;
     }
 }

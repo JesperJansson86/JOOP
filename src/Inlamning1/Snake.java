@@ -7,11 +7,11 @@ public class Snake extends Animal {
 
     @Override
     public int amountOfFood() {
-        return Kind.SNAKE.foodIndex;
+        return KindOfFood.SNAKE.foodIndex;
     }
 
     @Override
     public String foodType() {
-        return Kind.SNAKE.foodType;
+        return KindOfFood.SNAKE.foodType;
     }
 }

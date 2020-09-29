@@ -7,11 +7,11 @@ public class Cat extends Animal {
 
     @Override
     public int amountOfFood() {
-        return getWeight() / Kind.CAT.foodIndex;
+        return getWeight() / KindOfFood.CAT.foodIndex;
     }
 
     @Override
     public String foodType() {
-        return Kind.CAT.foodType;
+        return KindOfFood.CAT.foodType;
     }
 }
