@@ -18,6 +18,7 @@ public class Main {
         animals.add(a4);
         animals.add(a5);
 
+
         String name;
         while (true) {
             name = JOptionPane.showInputDialog(null, "Vilket djur ska få mat");
@@ -26,6 +27,7 @@ public class Main {
             int count =0;
             for (int i = 0; i < animals.size(); i++,count++) {
                 if (name.equals(animals.get(i).getName().toLowerCase())) {
+                    //Här används polymorphism.
                     String tempName = animals.get(i).getName();
                     int amountOfFood = animals.get(i).amountOfFood();
                     String foodType = animals.get(i).foodType();
