@@ -22,14 +22,18 @@ public class Main {
         while (true) {
             name = JOptionPane.showInputDialog(null, "Vilket djur ska få mat");
             if (name == null) break;
-            for (int i = 0; i < 5; i++) {
-                if (name.equals(animals.get(i).getName())) {
+            name = name.toLowerCase();
+            int count =0;
+            for (int i = 0; i < animals.size(); i++,count++) {
+                if (name.equals(animals.get(i).getName().toLowerCase())) {
                     String tempName = animals.get(i).getName();
                     int amountOfFood = animals.get(i).amountOfFood();
                     String foodType = animals.get(i).foodType();
                     System.out.println(tempName+" skall ha "+amountOfFood+"gr "+foodType+".");
+                    count = animals.size()+1;
+                }
 
-            }}
+            }if (count == animals.size()) System.out.println("Det finns inget djur med det namnet");
         }
     }
 
