@@ -1,6 +1,6 @@
 package Inlamning1;
 
-public class Animal implements Food {
+abstract class Animal implements Food {
     protected int weight;
     protected String name;
 

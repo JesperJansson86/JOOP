@@ -6,17 +6,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Animal a1 = new Dog("Sixten", 5000);
-        Animal a2 = new Dog("Dogge", 10000);
-        Animal a3 = new Cat("Venus", 5000);
-        Animal a4 = new Cat("Ove", 3000);
-        Animal a5 = new Snake("Hypno", 1000);
+
         List<Animal> animals = new ArrayList<>();
-        animals.add(a1);
-        animals.add(a2);
-        animals.add(a3);
-        animals.add(a4);
-        animals.add(a5);
+        animals.add(new Dog("Sixten", 5000));
+        animals.add(new Dog("Dogge", 10000));
+        animals.add(new Cat("Venus", 5000));
+        animals.add(new Cat("Ove", 3000));
+        animals.add(new Snake("Hypno", 1000));
 
 
         String name;
