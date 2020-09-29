@@ -5,12 +5,12 @@ public class Snake extends Animal {
         super(name, weight);
     }
 
-    @Override
+
     public int amountOfFood() {
         return KindOfFood.SNAKE.foodIndex;
     }
 
-    @Override
+
     public String foodType() {
         return KindOfFood.SNAKE.foodType;
     }

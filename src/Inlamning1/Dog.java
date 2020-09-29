@@ -6,13 +6,15 @@ public class Dog extends Animal {
         super(name, weight);
     }
 
-    @Override
+
     public int amountOfFood() {
         return getWeight() / KindOfFood.DOG.foodIndex;
     }
-                                                        //Här använder jag enumet DOG.foodIndex
-    @Override
+    //Här använder jag enumet DOG.foodIndex
+
     public String foodType() {
         return KindOfFood.DOG.foodType;
     }
+    //Här använder jag enumet DOG.foodType
 }
+

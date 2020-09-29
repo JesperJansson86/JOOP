@@ -5,8 +5,11 @@ public interface Food {
 
     String foodType();
 
+    //Här skapar jag mina enums.
     enum KindOfFood {
-        DOG(100, "hundmat"), CAT(150, "kattmat"), SNAKE(20, "ormpellets");
+        DOG(100, "hundmat"),
+        CAT(150, "kattmat"),
+        SNAKE(20, "ormpellets");
         public final int foodIndex;
         public final String foodType;
 

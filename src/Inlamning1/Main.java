@@ -20,19 +20,21 @@ public class Main {
             name = JOptionPane.showInputDialog(null, "Vilket djur ska få mat");
             if (name == null) break;
             name = name.toLowerCase();
-            int count =0;
-            for (int i = 0; i < animals.size(); i++,count++) {
-                if (name.equals(animals.get(i).getName().toLowerCase())) {
+            boolean found = false;
+            for (var a : animals) {
+                if (name.equals(a.getName().toLowerCase())) {
                     //Här används polymorphism.
-                    String tempName = animals.get(i).getName();
-                    int amountOfFood = animals.get(i).amountOfFood();
-                    String foodType = animals.get(i).foodType();
-                    System.out.println(tempName+" skall ha "+amountOfFood+"gr "+foodType+".");
-                    count = animals.size()+1;
+                    String tempName = a.getName();
+                    int amountOfFood = a.amountOfFood();
+                    String foodType = a.foodType();
+                    System.out.println(tempName + " skall ha " + amountOfFood + "gr " + foodType + ".");
+                    found = true;
                 }
 
-            }if (count == animals.size()) System.out.println("Det finns inget djur med det namnet");
+            }
+            if (!found) System.out.println("Det finns inget djur med det namnet");
         }
+        System.exit(0);
     }
 
 
