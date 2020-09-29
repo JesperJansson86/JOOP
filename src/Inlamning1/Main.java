@@ -24,10 +24,8 @@ public class Main {
             for (var a : animals) {
                 if (name.equals(a.getName().toLowerCase())) {
                     //Här används polymorphism.
-                    String tempName = a.getName();
-                    int amountOfFood = a.amountOfFood();
-                    String foodType = a.foodType();
-                    System.out.println(tempName + " skall ha " + amountOfFood + "gr " + foodType + ".");
+                    System.out.println(a.getName() + " skall ha " + a.amountOfFood() + "gr " + a.foodType() + ".");
+                    //JOptionPane.showMessageDialog(null,a.getName() + " skall ha " + a.amountOfFood() + "gr " + a.foodType() + ".");
                     found = true;
                 }
 
